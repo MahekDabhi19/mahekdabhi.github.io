@@ -67,6 +67,24 @@ section {
     padding-bottom: 40px;
 }
 
+  /* Style for the success GIF and message */
+        #success-gif {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #success-gif img {
+            width: 200px; /* Set the width of the GIF */
+            height: 200px; /* Set the height of the GIF */
+        }
+
+        #success-message {
+            margin-top: 10px;
+            font-size: 24px;
+            color: green;
+        }
+
     </style>
 
 </head>
@@ -129,12 +147,14 @@ section {
                 </form>
             </div>
 
-            <!-- Cash on Delivery Method -->
-            <div class="payment-method" >
-                <form action="index.html" >.
-                    <input type="submit" value="Confirm Order" class="btn">
-                </form>
-            </div>
+                  <!-- Cash on Delivery Method -->
+                <div class="payment-method" id="cod-method">
+                    <button type="button" id="confirm-order-btn" class="btn">Confirm Order</button>
+                    <div id="success-gif" style="display:none;">
+                        <img src="image/success.gif" alt="Success" />
+						   <div id="success-message">Order placed successfully !!</div>
+                    </div>
+                </div>
 			
 			
         </div>
@@ -191,19 +211,18 @@ section {
 	<!-- Custom JS File Link  -->
     <script src="js/script.js"></script>
 
-    <script>
-        document.getElementById("box1").addEventListener("click", function () {
-            alert("1 month subscription Sucessfull!");
-        });
+	    <script>
+        document.getElementById("confirm-order-btn").addEventListener("click", function () {
+            // Display the success GIF
+            document.getElementById("success-gif").style.display = "block";
 
-        document.getElementById("box2").addEventListener("click", function () {
-            alert("3 month subscription Sucessfull!");
-        });
-
-        document.getElementById("box3").addEventListener("click", function () {
-            alert("6 month subscription Sucessfull!");
+            // Redirect to index.html after 3 seconds
+            setTimeout(function () {
+                window.location.href = "index.html";
+            }, 2500);
         });
     </script>
+
 </body>
 
 </html>
