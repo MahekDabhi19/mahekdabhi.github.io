@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VICTORIA’S COFFEE</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+
+/* CSS for sections */
+section {
+    padding: 30px; /* Increased padding */
+    margin-bottom: 30px; /* Increased margin bottom */
+}
+
+/* Optional: Add specific margin and padding to individual sections if needed */
+.home {
+    /* Increased margin and padding for the home section */
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.about {
+    /* Increased margin and padding for the about section */
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.menu {
+    /* Increased margin and padding for the menu section */
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.review {
+    /* Increased margin and padding for the review section */
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.book {
+    /* Increased margin and padding for the book section */
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer {
+    /* Increased margin and padding for the footer section */
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo">VICTORIA’S COFFEE <i class="fas fa-mug-hot"></i></a>
+		
+		<nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html">about</a>
+            <a href="index.html">menu</a>
+            <a href="index.html">review</a>
+            <a href="index.html">book</a>
+        </nav>
+
+       
+    </header>
+
+    
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h1 class="heading">our Plans <span>popular Plans</span></h1>
+
+        <div class="box-container">
+            <a href="#" class="box" id="box1">
+                <img src="image/menu-1.png" alt="">
+                <div class="content">
+                    <h3>1 month subscription</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, sed.</p>
+                    <span>$8.99</span>
+                </div>
+            </a>
+
+            <a href="#" class="box" id="box2">
+                <img src="image/menu-2.png" alt="">
+                <div class="content">
+                    <h3>3 month subscription</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, fugit.</p>
+                    <span>$8.99</span>
+                </div>
+            </a>
+
+            <a href="#" class="box" id="box3">
+                <img src="image/menu-3.png" alt="">
+                <div class="content">
+                    <h3>6 month Premium subscription</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, recusandae.</p>
+                    <span>$8.99</span>
+                </div>
+            </a>
+        </div>
+    </section>
+            
+
+            
+     
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> india</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> USA</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> france</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> africa</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> japan</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
+                <a href="#book"><i class="fas fa-arrow-right"></i> book</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>
+                <a href="#"><i class="fas fa-envelope"></i> coffee@gmail.com</a>
+                <a href="#"><i class="fas fa-envelope"></i> Perú, Lima</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            </div>
+        </div>
+
+        <div class="credit">created by <span>mr. web designer</span> | all rights reserved</div>
+    </section>
+
+    <script>
+        document.getElementById("box1").addEventListener("click", function () {
+            alert("1 month subscription Sucessfull!");
+        });
+
+        document.getElementById("box2").addEventListener("click", function () {
+            alert("3 month subscription Sucessfull!");
+        });
+
+        document.getElementById("box3").addEventListener("click", function () {
+            alert("6 month subscription Sucessfull!");
+        });
+    </script>
+</body>
+
+</html>
