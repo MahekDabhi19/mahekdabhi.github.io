@@ -93,37 +93,13 @@ section {
     
 
     <!-- MENU -->
-    <section class="menu" id="menu">
-        <h1 class="heading">our Plans <span>popular Plans</span></h1>
+    <section class="book" id="book">
+        <h1 class="heading">booking <span>reserve a table</span></h1>
 
-        <div class="box-container">
-            <a href="address.html" class="box" id="box1">
-                <img src="image/menu-1.png" alt="">
-                <div class="content">
-                    <h3>1 month subscription</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, sed.</p>
-                    <span>$8.99</span>
-                </div>
-            </a>
-
-            <a href="#" class="box" id="box2">
-                <img src="image/menu-2.png" alt="">
-                <div class="content">
-                    <h3>3 month subscription</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, fugit.</p>
-                    <span>$8.99</span>
-                </div>
-            </a>
-
-            <a href="#" class="box" id="box3">
-                <img src="image/menu-3.png" alt="">
-                <div class="content">
-                    <h3>6 month Premium subscription</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, recusandae.</p>
-                    <span>$8.99</span>
-                </div>
-            </a>
-        </div>
+        <form action="payment.html">
+            <textarea name="" placeholder="Address" class="box" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Go to payment" class="btn">
+        </form>
     </section>
             
 
@@ -174,8 +150,22 @@ section {
 	<!-- SWIPER -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	
-	
+	<!-- Custom JS File Link  -->
+    <script src="js/script.js"></script>
 
+    <script>
+        document.getElementById("box1").addEventListener("click", function () {
+            alert("1 month subscription Sucessfull!");
+        });
+
+        document.getElementById("box2").addEventListener("click", function () {
+            alert("3 month subscription Sucessfull!");
+        });
+
+        document.getElementById("box3").addEventListener("click", function () {
+            alert("6 month subscription Sucessfull!");
+        });
+    </script>
 </body>
 
 </html>
